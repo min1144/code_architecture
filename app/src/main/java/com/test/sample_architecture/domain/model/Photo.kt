@@ -7,23 +7,23 @@ data class Photo(
 
     @SerializedName("id")
     @Expose
-    var id: String = "",
+    var id: String,
 
     @SerializedName("secret")
     @Expose
-    var secret: String = "",
+    var secret: String,
 
     @SerializedName("server")
     @Expose
-    var server: String = "",
+    var server: String,
 
     @SerializedName("farm")
     @Expose
-    var farm: Int = 0,
+    var farm: Int,
 
     @SerializedName("title")
     @Expose
-    var title: String = ""
+    var title: String
 ) {
 
     val photoUrl: String
